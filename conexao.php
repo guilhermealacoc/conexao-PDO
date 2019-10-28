@@ -1,7 +1,7 @@
 <?php 
-$conn = new PDO("mysql:dbname=teste_pdo;host=localhost", "root", "");
+$conn = new PDO("mysql:dbname=nome_do_banco;host=localhost", "root", "");
 
-$stmt = $conn->prepare("SELECT * FROM teste");
+$stmt = $conn->prepare("SELECT * FROM sua_tabela");
 
 $stmt->execute();
 
